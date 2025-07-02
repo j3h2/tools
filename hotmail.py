@@ -22,8 +22,6 @@ def getPassword():
     return generate_pwd18()
 
 def regsiter(index):
-    
-
     url = 'https://outlook.live.com/owa/?nlp=1&signup=1'
     ads = getAdsPowerByIndex(index)
     driver = ads.lunch()
@@ -102,7 +100,6 @@ def regsiter(index):
 
     logger.info(f"{index} 号指纹浏览器，hotmail 账号创建成功! 您的邮箱账号为 {user_name}@hotmail.com, 密码为: {pwd} ,生日: {year}-{month}-{day}, first_name is {first_name}, last_name is {last_name}")
     logger.info('注意：验证码需要自行点击才能最终创建成功')
-
 
 if __name__ == '__main__':
     regsiter(47)
