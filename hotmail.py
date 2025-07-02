@@ -12,7 +12,6 @@ from base import getAdsPowerByIndex
 from utils.pwd import generate_pwd18
 
 
-
 def getUserName():
     n = random.randint(4, 6)
     random_string = ''.join(random.choices(string.digits, k=n))
